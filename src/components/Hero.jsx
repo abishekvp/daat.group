@@ -1,6 +1,31 @@
 import { motion } from 'framer-motion';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSectionClick = (e, sectionId) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      // Navigate to home first
+      navigate('/');
+      // Then scroll after a short delay
+      setTimeout(() => {
+        const element = document.querySelector(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 200);
+    } else {
+      // Already on home, just scroll
+      const element = document.querySelector(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <section className="relative w-full h-screen flex items-center justify-center px-6">
       <div className="text-center z-10 max-w-4xl">
