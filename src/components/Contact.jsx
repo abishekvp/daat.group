@@ -13,11 +13,11 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                        <input type="text" className="w-full bg-black/50 border border-white/10 rounded p-3 text-white focus:border-brand-neon focus:outline-none transition-colors" placeholder="John Doe" />
+                        <input type="text" className="w-full bg-black/50 border border-white/10 rounded p-3 text-white focus:border-brand-neon focus:outline-none transition-colors" placeholder="Abiraj Vikramadhithyan" />
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                        <input type="email" className="w-full bg-black/50 border border-white/10 rounded p-3 text-white focus:border-brand-neon focus:outline-none transition-colors" placeholder="john@example.com" />
+                        <input type="email" className="w-full bg-black/50 border border-white/10 rounded p-3 text-white focus:border-brand-neon focus:outline-none transition-colors" placeholder="abiraj@daat.group" />
                     </div>
                 </div>
                 <div>
@@ -31,8 +31,8 @@ const Contact = () => {
 
             <div className="mt-12 text-center border-t border-white/10 pt-8">
                 <p className="text-gray-400 mb-4">Or email us directly</p>
-                <a href="mailto:info@daatstudios.com" className="text-2xl font-bold text-white hover:text-brand-purple transition-colors">
-                    info@daatstudios.com
+                <a href="mailto:info@daat.group" className="text-2xl font-bold text-white hover:text-brand-purple transition-colors">
+                    info@daat.group
                 </a>
             </div>
         </div>

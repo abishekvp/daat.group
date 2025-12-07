@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const reviews = [
   {
@@ -39,6 +40,20 @@ const Testimonials = () => {
                 </motion.div>
             ))}
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="mt-12"
+        >
+          <Link 
+            to="/reviews"
+            className="inline-block px-8 py-3 border border-brand-neon text-brand-neon hover:bg-brand-neon hover:text-black transition-all rounded font-bold"
+          >
+            VIEW MORE REVIEWS
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

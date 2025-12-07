@@ -1,26 +1,26 @@
 import React from 'react';
-import CanvasContainer from './components/CanvasContainer';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
+import Home from './pages/Home';
+import CareersPage from './pages/CareersPage';
+import ReviewsPage from './pages/ReviewsPage';
+import EducationPage from './pages/EducationPage';
 
 function App() {
   return (
-    <main className="relative w-full">
-      <CanvasContainer />
-      <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <Testimonials />
-      <Contact />
-      <footer className="text-center py-8 text-gray-600 text-sm">
-        &copy; {new Date().getFullYear()} Daat Studios. All rights reserved.
-      </footer>
-    </main>
+    <Router>
+      <ScrollToTop />
+      <main className="relative w-full">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/education" element={<EducationPage />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

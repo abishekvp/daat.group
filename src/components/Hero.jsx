@@ -36,9 +36,6 @@ const Hero = () => {
           <a href="#contact" className="px-8 py-3 bg-brand-neon text-black font-bold rounded hover:bg-white transition-colors">
             Start Your Project
           </a>
-          <a href="#education" className="px-8 py-3 border border-white text-white font-bold rounded hover:bg-white/10 transition-colors">
-            Weekend Coding Classes
-          </a>
         </motion.div>
       </div>
     </section>
