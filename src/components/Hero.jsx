@@ -33,7 +33,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col md:flex-row gap-4 justify-center"
         >
-          <a href="#contact" className="px-8 py-3 bg-brand-neon text-black font-bold rounded hover:bg-white transition-colors">
+          <a href="#contact" onClick={(e) => handleSectionClick(e, '#contact')} className="px-8 py-3 bg-brand-neon text-black font-bold rounded hover:bg-white transition-colors">
             Start Your Project
           </a>
         </motion.div>
